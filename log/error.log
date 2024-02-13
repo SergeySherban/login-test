@@ -1,0 +1,12 @@
+2024/02/11 00:25:52 [crit] 1881916#1881916: *12 connect() to unix:/var/run/php8.1-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: maxima-labs.local, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php8.1-fpm.sock:", host: "maxima-labs.local"
+2024/02/13 10:11:07 [error] 1514#1514: *2733 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\base\ViewNotFoundException: The view file does not exist: /var/www/html/maxima_labs/views/site/error.php in /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#1 /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/Controller.php(407): yii\base\View->render()
+#2 /var/www/html/maxima_labs/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#3 /var/www/html/maxima_labs/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/Action.php(93): call_user_func_array()
+#6 /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\Action->runWithParams()
+#7 /var/www/html/maxima_labs/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->" while reading upstream, client: 127.0.0.1, server: maxima-labs.local, request: "GET /2024-02-13_10-09_1.png HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.1-fpm.sock:", host: "maxima-labs.local"
